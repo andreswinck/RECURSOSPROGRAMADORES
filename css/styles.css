@@ -1,0 +1,110 @@
+.titulo_busqueda{
+    text-align: center;
+    font-size: 1vw;
+    font-family: cursive;
+    /* color: #4d0b0b; */
+}
+.table tbody tr:hover {
+    background-color: #caa7a4;
+}
+/* Style the table itself */
+table {
+    width: 100%; /* Make table take up full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+/* Style the table header */
+table thead th {
+    background-color: #0700001a; /* Light grey background */
+    text-align: center; /* Align text to the left */
+    padding: 10px; /* Add some padding */
+}
+
+/* Style the table body */
+table tbody td {
+    border: 1px solid #ddd; /* Add a border */
+    padding: 10px; /* Add some padding */
+}
+
+/* Style the table rows */
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey background on even rows */
+}
+body {
+    background-color: #75ac8556;
+    font-size: 1vw;
+    font-family: cursive;
+}
+
+/* Tema claro */
+body.light-theme {
+    background-color: #dfcccc;
+    color: #000;
+    /* Agrega otros estilos para el tema claro aquí */
+}
+body.light-theme a {
+    color: #4d0b0b; /* Enlaces negros en el tema claro */
+}
+
+body a{
+    color: #000;
+}
+
+/* Tema oscuro */
+body.dark-theme {
+    background-color: #2b2b2b; /* Un gris oscuro más suave */
+    color: #cfcfcf; /* Un gris claro para el texto */
+}
+
+body.dark-theme table thead th {
+    background-color: #080000; /* Un gris oscuro para las cabeceras de la tabla */
+    color: #cfcfcf; /* Un gris claro para el texto de las cabeceras de la tabla */
+}
+
+body.dark-theme table tbody td {
+    border-color: #070000; /* Un gris oscuro para las bordes de las celdas */
+}
+
+body.dark-theme table tr:nth-child(even) {
+    background-color: #1b1a1a; /* Un gris aún más oscuro para las filas pares */
+}
+body.dark-theme a {
+    color: #f7fafa; /* Enlaces azules en el tema oscuro */
+}
+/* Efecto hover en las filas de la tabla para el tema oscuro */
+body.dark-theme table tr:hover {
+    background-color: #4a4a4a; /* Cambia el color de fondo de las filas al pasar el ratón por encima */
+}
+
+/* boton cambio de tema */
+.theme-toggle-button {
+    margin-left: auto;
+    display: block;
+    font-size: 2em; /* Ajusta este valor según tus necesidades */
+}
+
+/* .sort-arrow {
+    cursor: pointer;
+    margin-left: 5px;
+} */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+    .search {
+        height: 10px; /* Ajusta este valor según tus necesidades */
+        font-size: 1em; /* Ajusta este valor según tus necesidades */
+        border-radius: 5px; /* Ajusta este valor según tus necesidades */
+        margin-bottom: 5;
+        width: 50%;
+}
+}   
+
+.search {
+    height: 40px; /* Ajusta este valor según tus necesidades */
+    font-size: 1.1em; /* Ajusta este valor según tus necesidades */
+    border-radius: 5px; /* Ajusta este valor según tus necesidades */
+    margin-bottom: 5px;
+    width: 50%;
+}
